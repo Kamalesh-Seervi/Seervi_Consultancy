@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Seervi Tax consultancy</title>
+    <title>Seervi Tax Consultancy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -22,7 +22,229 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
+
+    <style>
+      /* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; */
+  /* background-color: grey; */
+/* } */
+section {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+.card {
+  width: 90%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background: linear-gradient(#ffffff 50%,green 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f194c;
+  margin: 1em 0;
+}
+p {
+  color: #575a7b;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.icon-wrapper {
+  background-color: #2c7bfe;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+/* .card:hover {
+  background-position: 0 100%;
+}
+.card:hover .icon-wrapper {
+  background-color: #ffffff;
+  color: #2c7bfe;
+} */
+/* .card:hover h3 {
+  color: #ffffff;
+}
+.card:hover p {
+  color: #f0f0f0;
+} */
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 3em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+
+
+.our-team-section {
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.our-team-section:before {
+    position: absolute;
+    top: -0;
+    left: 0;
+    content: " ";
+    background: url(img/service-section-bottom.png);
+    background-size: 100% 100px;
+    width: 100%;
+    height: 100px;
+    float: left;
+    z-index: 99;
+}
+.our-team {
+    padding: 30px 0 40px;
+    background: #f9f9f9;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 5px solid #00325a;
+}
+.our-team:hover{
+    border-bottom: 5px solid #2f2f2f;
+}
+
+.our-team .pic{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+}
+.our-team .pic:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #00325a;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+.our-team:hover .pic:before{
+ height: 100%;
+    background: #2f2f2f; 
+ }
+.our-team .pic:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ffffff00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s linear 0s;
+}
+.our-team:hover .pic:after{
+    background: #7ab92d;
+}
+.our-team .pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+    position: relative;
+    z-index: 2;
+}
+.our-team:hover .pic img{
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+}
+.our-team .team-content{ margin-bottom: 30px; }
+.our-team .title{
+    font-size: 22px;
+    font-weight: 700;
+    color: #4e5052;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.our-team .post{
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform:capitalize;
+}
+.our-team .social{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #2f2f2f;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social{ bottom: 0; }
+.our-team .social li{ display: inline-block; }
+.our-team .social li a{
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.our-team .social li a:hover{
+    color: #2f2f2f;
+    background: #f7f5ec;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+    </style>
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
@@ -45,17 +267,16 @@
           
             
             <div class="site-logo">
-              <a href="index.html" class="text-black"><span class="text-primary">Seervi Tax Consultancy</a>
+              <a href="index.html" class="text-black"><span class="" style="color: green;">Seervi Tax Consultancy</a>
             </div>
             
               <nav class="site-navigation text-center ml-auto" role="navigation">
 
                 <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                  <li><a href="#home-section" class="nav-link">Home</a></li>
+                  <li><a href="#home-section" class="nav-link" >Home</a></li>
                   <li><a href="#about-section" class="nav-link">About</a></li>
                   <li><a href="#services-section" class="nav-link">Services</a></li>
-                  
-                  
+                  <li><a href="price.html" class="nav-link">Pricing</a></li>
                   <li><a href="#blog-section" class="nav-link">Blog</a></li>
                   <li><a href="#contact-section" class="nav-link">Contact</a></li>
                 </ul>
@@ -71,16 +292,14 @@
     </header>
     
     <div class="owl-carousel slide-one-item">
-      
 
-      
 
-      <div class="site-section-cover overlay img-bg-section" style="background-image: url('images/hero_1.jpg'); " >
+      <div class="site-section-cover overlay img-bg-section" style="background-image: url('images/front3.jpg'); " >
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-12 col-lg-7 text-center">
-              <h1>Investing for Success</h1>  
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel minima quasi quisquam, alias doloremque magni.</p>
+              <h1>Your Financial Advisor</h1>  
+              <p>In today’s scenario of globalization and technology convergence, the process of doing business has been redefined. Outsourcing the right business processes makes a lot of business sense.</p>
               <p><a href="#" class="btn btn-white-outline border-w-2 btn-md">Get in touch</a></p>
             </div>
           </div>
@@ -88,12 +307,12 @@
 
       </div>
 
-      <div class="site-section-cover overlay img-bg-section" style="background-image: url('images/hero_2.jpg'); " >
+      <div class="site-section-cover overlay img-bg-section" style="background-image: url('images/front4.jpg'); " >
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-12 col-lg-7 text-center">
-              <h1>Tax consultancy</h1>      
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel minima quasi quisquam, alias doloremque magni.</p>    
+              <h1>Tax Consultancy</h1>      
+              <p>Most businesses and large companies are outsourcing their accounting, financial reporting and payroll processes for driving efficiency and cost savings to the business.</p>    
               <p><a href="#" class="btn btn-white-outline border-w-2 btn-md">Get in touch</a></p>
             </div>
           </div>
@@ -109,37 +328,41 @@
       <div class="container">
         <div class="row" style="margin-top: -50px;">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <img src="images/img_1.jpg" alt="Image" class="img-fluid mb-3">
-            <h3 class="text-primary h4 mb-2">GST Registration and Filing</h3>
-            <!-- <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p> -->
+            <img src="images/bookkeeping.jpg" alt="Image" class="img-fluid mb-3">
+            <h3 class="text-primary h4 mb-2">Book Keeping</h3>
+            <p></p>
+             <p>Our trained staff efficiently uses technology to process transactions on a daily bases. This methodical process of recording all financial transactions leaves little room for any glitches in the accounting process. Based on client request, we also take Bank payout activity.</p>
+     
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <img src="images/taxplanning.jpg" alt="Image" class="img-fluid mb-3">
+            <h3 class="text-primary h4 mb-2">Tax Planning & Returns</h3>
+            <p></p>
+            <p>The service involves helping the clients make necessary periodic income tax, GST, sales tax and other returns. It also includes helping the client make the right investment decisions and helping them avail various rebates and deductions.</p>
             <!-- <p><a href="#">Read more</a></p> -->
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <img src="images/img_2.jpg" alt="Image" class="img-fluid mb-3">
-            <h3 class="text-primary h4 mb-2">Income Tax Filing & Tax Planning</h3>
-            <!-- <p>Praesentium magnam pariatur quae necessitatibus eligendi voluptate ducimus.</p> -->
-            <!-- <p><a href="#">Read more</a></p> -->
+            <img src="images/fin.jpg" alt="Image" class="img-fluid mb-3">
+            <h3 class="text-primary h4 mb-2">Financial Statement preparation</h3>
+            <p></p>
+             <p>Our team takes care of all financial statement preparation such as balance sheet, income statement or profit and loss statement, statement of retained earnings and cash flows. Also we do Consolidation of Financial statement.</p>
+      
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <img src="images/img_3.jpg" alt="Image" class="img-fluid mb-3">
-            <h3 class="text-primary h4 mb-2">Accounting and Book Keeping Services</h3>
-            <!-- <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
-            <p><a href="#">Read more</a></p> -->
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <img src="images/img_3.jpg" alt="Image" class="img-fluid mb-3">
+            <img src="images/pan.jpg" alt="Image" class="img-fluid mb-3">
             <h3 class="text-primary h4 mb-2">PAN, TAN & Aadhar related Services</h3>
             <!-- <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
             <p><a href="#">Read more</a></p> -->
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <img src="images/img_3.jpg" alt="Image" class="img-fluid mb-3">
-            <h3 class="text-primary h4 mb-2">CA Certifications</h3>
-            <!-- <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
-            <p><a href="#">Read more</a></p> -->
+            <img src="images/payroll.jpg" alt="Image" class="img-fluid mb-3">
+            <h3 class="text-primary h4 mb-2">Payroll Outsourcing</h3>
+            <p></p>
+            <p></p>
+            <p>Preparation of the monthly payroll based on the inputs received from organization. This would include Income & all other statutory deductions. Checking Form 16 for the Employees and file Qtly. returns for e-TDS with Income Tax authorities.</p>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <img src="images/img_3.jpg" alt="Image" class="img-fluid mb-3">
+            <img src="images/licen.jpg" alt="Image" class="img-fluid mb-3">
             <h3 class="text-primary h4 mb-2">FSSAI Certificate, Hallmark License</h3>
             <!-- <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
             <p><a href="#">Read more</a></p> -->
@@ -160,17 +383,17 @@
             </figure>
           </div>
           <div class="col-lg-5 ml-auto">
-            <h2 class="text-primary mb-4">Welcome to Inves</h2>
-            <p>Accusantium dignissimos voluptas rem consequatur blanditiis error ratione illo sit quasi ut, praesentium magnam, pariatur quae, necessitatibus</p>
-            <p>Dolor, eligendi voluptate ducimus itaque esse autem perspiciatis sint! Recusandae dolor aliquid inventore sit,</p>
-            <p>Recusandae dolor aliquid inventore sit, maiores quisquam nostrum quaerat dolorum error rerum</p>
-            <p><a href="#">Read More</a></p>
+            <h2 class="text-primary mb-4">Welcome to STC</h2>
+            <!-- <p>STC is a new startup company</p> -->
+            <p>Our goal is to provide Accounting, Payroll and Tax compliance services to SaaS Businesses at affordable price with Quality of Service. 
+             Outsourcing the right business processes makes a lot of business sense. Most businesses and large companies are outsourcing their accounting, financial reporting and payroll processes for driving efficiency and cost savings to the business.</p>
+             <p>Thank you for choosing us as your trusted partner in tax compliance. We look forward to working with you and helping you achieve your financial goals.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 mb-4 col-lg-0 col-lg-3">
             <div class="block-counter-1">
-              <span class="number"><span data-number="15">0</span></span>
+              <span class="number"><span data-number="5">0</span></span>
               <span class="caption">Year of Experience</span>
             </div>
           </div>
@@ -196,7 +419,7 @@
       </div>
     </div>
 
-    <div class="site-section bg-light" id="services-section">
+    <!-- <div class="site-section bg-light" id="services-section"> -->
       <div class="container">
         <div class="row mb-5">
           <div class="col-12">
@@ -205,107 +428,204 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4">
-            <span class="icon-signal d-block mb-3 display-3 text-secondary"></span>
-            <h3 class="text-primary h4 mb-2">Business Analytics</h3>
-            <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
+   
+        <section>
+ 
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <div class="icon-wrapper">
+                  <i class=""></i>
+                </div>
+                <h3>Book Keeping</h3>
+                <!-- <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                  consequatur necessitatibus eaque.
+                </p> -->
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="icon-wrapper">
+                  <i class="fas fa-brush"></i>
+                </div>
+                <h3>ITR Filing</h3>
+                <!-- <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                  consequatur necessitatibus eaque.
+                </p> -->
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="icon-wrapper">
+                  <i class="fas fa-wrench"></i>
+                </div>
+                <h3>Service Heading</h3>
+                <!-- <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                  consequatur necessitatibus eaque.
+                </p> -->
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="icon-wrapper">
+                  <i class="fas fa-truck-pickup"></i>
+                </div>
+                <h3>Service Heading</h3>
+                <!-- <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                  consequatur necessitatibus eaque.
+                </p> -->
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="icon-wrapper">
+                  <i class="fas fa-broom"></i>
+                </div>
+                <h3>Service Heading</h3>
+                <!-- <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                  consequatur necessitatibus eaque.
+                </p> -->
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="icon-wrapper">
+                  <i class="fas fa-plug"></i>
+                </div>
+                <h3>Service Heading</h3>
+                <!-- <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                  consequatur necessitatibus eaque.
+                </p> -->
+              </div>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <span class="icon-anchor d-block mb-3 display-3 text-secondary"></span>
-            <h3 class="text-primary h4 mb-2">Investment Solutions</h3>
-            <p>Praesentium magnam pariatur quae necessitatibus eligendi voluptate ducimus.</p>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <span class="icon-magnet d-block mb-3 display-3 text-secondary"></span>
-            <h3 class="text-primary h4 mb-2">Individual Approach</h3>
-            <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4">
-            <span class="icon-briefcase d-block mb-3 display-3 text-secondary"></span>
-            <h3 class="text-primary h4 mb-2">Business Analytics</h3>
-            <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <span class="icon-money d-block mb-3 display-3 text-secondary"></span>
-            <h3 class="text-primary h4 mb-2">Investment Solutions</h3>
-            <p>Praesentium magnam pariatur quae necessitatibus eligendi voluptate ducimus.</p>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <span class="icon-umbrella d-block mb-3 display-3 text-secondary"></span>
-            <h3 class="text-primary h4 mb-2">Individual Approach</h3>
-            <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
-          </div>
-
-        </div>
+        </section>
+    
+    
       </div>
-    </div>
+    <!-- </div> -->
 
 
-
-    <div class="site-section" id="team-section">
+    <section class="our-team-section">
       <div class="container">
-        <div class="row mb-5">
-          <div class="col-12">
-            <div class="block-heading-1">
-              <h2>Our Leadership</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up">
-            <div class="block-team-member-1 text-center rounded">
-              <figure>
-                <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle">
-              </figure>
-              <h3 class="font-size-20 text-white">Jean Smith</h3>
-              <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Mining Expert</span>
-              <p class="px-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, repellat. At, soluta. Repellendus vero, consequuntur!</p>
-              <div class="block-social-1">
-                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
-                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
-                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
+          <div class="row" style="display: flex; justify-content: center;">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="our-team">
+                      <div class="pic">
+                          <img src="images/ashok.JPG">
+                      </div>
+                      <div class="team-content">
+                          <h3 class="title">CEO</h3>
+                          <span class="post">Ashok Barfa</span>
+                          
+                      </div>
+                      <ul class="social">
+                          <li>
+                              <a href="#"  target="_blank"class="fa fa-facebook"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-twitter"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-google-plus"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-linkedin"></a>
+                          </li>
+                      </ul>
+                  </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-            <div class="block-team-member-1 text-center rounded">
-              <figure>
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle">
-              </figure>
-              <h3 class="font-size-20 text-white">Bob Carry</h3>
-              <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Project Manager</span>
-              <p class="px-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quia veritatis, nam quam obcaecati fuga.</p>
-              <div class="block-social-1">
-                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
-                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
-                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
+              <!-- <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="our-team">
+                      <div class="pic">
+                          <img src="https://i.ibb.co/8x9xK4H/team.jpg">
+                      </div>
+                      <div class="team-content">
+                          <h3 class="title">Team 2</h3>
+                          <span class="post">Stellvertretender  Geschäftsführer</span>
+                      </div>
+                      <ul class="social">
+                          <li>
+                              <a href="#" class="fa fa-facebook"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-twitter"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-google-plus"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-linkedin"></a>
+                          </li>
+                      </ul>
+                  </div> -->
+              <!-- </div>
+              <div class="col-lg-3 col-md-6 col-sm-6"> -->
+                  <!-- <div class="our-team">
+                      <div class="pic">
+                          <img src="https://i.ibb.co/8x9xK4H/team.jpg">
+                      </div>
+                      <div class="team-content">
+                          <h3 class="title">Team 3</h3>
+                          <span class="post">Dipl. Physiotherapeut </span>
+                      </div>
+                      <ul class="social">
+                          <li>
+                              <a href="#" class="fa fa-facebook"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-twitter"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-google-plus"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-linkedin"></a>
+                          </li>
+                      </ul>
+                  </div> -->
+              <!-- </div> -->
+
+              <!-- <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="our-team">
+                      <div class="pic">
+                          <img src="https://i.ibb.co/8x9xK4H/team.jpg">
+                      </div>
+                      <div class="team-content">
+                          <h3 class="title">Team 4</h3>
+                          <span class="post">Dipl. Physiotherapeut </span>
+                      </div>
+                      <ul class="social">
+                          <li>
+                              <a href="#" class="fa fa-facebook"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-twitter"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-google-plus"></a>
+                          </li>
+                          <li>
+                              <a href="#" class="fa fa-linkedin"></a>
+                          </li>
+                      </ul>
+                  </div> -->
               </div>
-            </div>
           </div>
+      <!-- </div> -->
 
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="block-team-member-1 text-center rounded">
-              <figure>
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle">
-              </figure>
-              <h3 class="font-size-20 text-white">Ricky Fisher</h3>
-              <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Engineer</span>
-              <p class="px-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quidem, laudantium, illum minus numquam voluptas?</p>
-              <div class="block-social-1">
-                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
-                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
-                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  </section>
 
-    <div class="site-section" id="press-section">
+
+
+    <!-- <div class="site-section" id="press-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mb-5 mb-lg-0">
@@ -352,7 +672,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="site-section block-13 overlay bg-image" id="testimonials-section" data-aos="fade" style="background-image: url('images/hero_1.jpg');">
       <div class="container">
@@ -453,7 +773,7 @@
   rssfeed_css_url="https://feed.surfing-waves.com/css/style6.css"; 
   rssfeed_title="on"; 
   rssfeed_title_name=""; 
-  rssfeed_title_bgcolor="#3366ff"; 
+  rssfeed_title_bgcolor="green"; 
   rssfeed_title_color="#fff"; 
   rssfeed_title_bgimage=""; 
   rssfeed_footer="off"; 
@@ -479,7 +799,6 @@
   </script> 
   <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script> 
   <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. --> 
-  <div style="color:#ccc;font-size:10px; text-align:right; width:500px;">powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank" style="color:#ccc;">Surfing Waves</a></div> 
   <!-- end sw-rss-feed code -->
             </div>
           </div>
@@ -499,7 +818,7 @@
   rssfeed_font_size="12"; 
   rssfeed_font_face=""; 
   rssfeed_border="on"; 
-  rssfeed_css_url="https://feed.surfing-waves.com/css/style6.css"; 
+  rssfeed_css_url=""; 
   rssfeed_title="on"; 
   rssfeed_title_name=""; 
   rssfeed_title_bgcolor="#3366ff"; 
@@ -629,9 +948,9 @@
 
               <h2 class="footer-heading mb-4">Follow Us</h2>
                 <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                <!-- <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a> -->
+                <a href="https://instagram.com/seervitaxconsultancy?igshid=NTc4MTIwNjQ2YQ==" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                <!-- <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a> -->
             </form>
           </div>
         </div>
@@ -640,7 +959,7 @@
             <div class="border-top pt-5">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
             </div>
