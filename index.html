@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
-
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
@@ -24,226 +23,195 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-      /* * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif; */
-  /* background-color: grey; */
-/* } */
+.container {
+  max-width: 1320px;
+}
 section {
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  place-items: center;
+  overflow: hidden;
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
+
+.section-bg {
+  background: #f5f8fd;
 }
-.column {
-  width: 100%;
-  padding: 0 1em 1em 1em;
+
+.section-header h3 {
+  font-size: 36px;
+  color:green;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-header p {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color:green;
+  width: 40%;
+}
+
+@media (max-width: 767px) {
+  .section-header p {
+    width: 100%;
+  }
+}
+
+#services {
+  padding: 60px 0 40px 0;
+}
+
+#services .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
   text-align: center;
 }
-.card {
-  width: 90%;
-  height: 100%;
-  padding: 2em 1.5em;
-  background: linear-gradient(#ffffff 50%,green 50%);
-  background-size: 100% 200%;
-  background-position: 0 2.5%;
-  border-radius: 5px;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-  transition: 0.5s;
+
+#services .box:hover {
+  transform: scale(1.1);
 }
-h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #1f194c;
-  margin: 1em 0;
-}
-p {
-  color: #575a7b;
-  font-size: 15px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-}
-.icon-wrapper {
-  background-color: #2c7bfe;
-  position: relative;
-  margin: auto;
-  font-size: 30px;
-  height: 2.5em;
-  width: 2.5em;
-  color: #ffffff;
+
+#services .icon {
+  margin: 0 auto 15px auto;
+  padding-top: 12px;
+  display: inline-block;
+  text-align: center;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  transition: 0.5s;
+  width: 60px;
+  height: 60px;
 }
-/* .card:hover {
-  background-position: 0 100%;
+
+#services .icon .service-icon {
+  font-size: 36px;
+  line-height: 1;
 }
-.card:hover .icon-wrapper {
-  background-color: #ffffff;
-  color: #2c7bfe;
+
+#services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#services .title a {
+  color: #111;
+}
+
+#services .box:hover .title a {
+  color: green;
+}
+#services .box:hover .title a:hover {
+  text-decoration: none;
+}
+#services .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+/*team*/
+.team{
+    margin-top: var(--main-margin-top);
+    margin-bottom: var(--main-margin-bottom);
+    position: relative;
+}
+.team h2{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3b434c;
+  
+    
+}
+.team h2 span{
+    color: var(--main-color);
+}
+.team .p{
+    font-size: 16px;
+line-height: 30px;
+color: #3b434c;
+font-family: "Open Sans";
+font-weight: 400;
+text-align: center;
+}
+.team .ourteam{
+    margin: 30px 0;
+    transition: var(--mainTransition);
+}
+.team .card{
+    color: #cbcdcf;
+    box-shadow: none;
+    cursor: pointer;
+    transition: var(--mainTransition);
+  border:none;
+    
+}
+/* .team .card img{
+    filter:green;
+    filter: grayscale(1);
+    border-radius: 10px;
+    transition: var(--mainTransition);
 } */
-/* .card:hover h3 {
-  color: #ffffff;
+.team i{
+    margin: 5px;
 }
-.card:hover p {
-  color: #f0f0f0;
-} */
-@media screen and (min-width: 768px) {
-  section {
-    padding: 0 2em;
-  }
-  .column {
-    flex: 0 50%;
-    max-width: 50%;
-  }
+.team .card .card-text{
+    color: #b2b4b9 !important;
+    padding: 5px 0 !important;
 }
-@media screen and (min-width: 992px) {
-  section {
-    padding: 1em 3em;
-  }
-  .column {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-  }
+.team .card:hover img{
+    filter: none;
+    border-bottom: 5px solid green;
+    transform: scale(1.1);
+    transition: var(--mainTransition);
+
+}
+.team .card:hover .card-title{
+    color: #5f666d;
+}
+.team .card:hover .i1{
+    color: #3b5998;
+}
+.team .card:hover .i2{
+    color: #1da1f2;
+}
+.team .card:hover .i3{
+    color: #dd4b39;
+}
+.team .card:hover .card-text{
+    color: #84898e !important;
+}
+.tx{
+   color: #84898e !important; 
 }
 
-
-
-.our-team-section {
-    position: relative;
-    padding-top: 0px;
-    padding-bottom: 20px;
+ .activecolor{
+    background-color: green !important;
+   
 }
-.our-team-section:before {
-    position: absolute;
-    top: -0;
-    left: 0;
-    content: " ";
-    background: url(img/service-section-bottom.png);
-    background-size: 100% 100px;
-    width: 100%;
-    height: 100px;
-    float: left;
-    z-index: 99;
+.colored{
+    filter: none;
+    filter: grayscale(0%);
+    border-bottom: 5px solid green;
+    transform: scale(1.1);
+    transition: var(--mainTransition);
+   
 }
-.our-team {
-    padding: 30px 0 40px;
-    background: #f9f9f9;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-    border-bottom: 5px solid #00325a;
-}
-.our-team:hover{
-    border-bottom: 5px solid #2f2f2f;
-}
-
-.our-team .pic{
-    display: inline-block;
-    width: 130px;
-    height: 130px;
-    margin-bottom: 50px;
-    z-index: 1;
-    position: relative;
-}
-.our-team .pic:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: #00325a;
-    position: absolute;
-    bottom: 135%;
-    right: 0;
-    left: 0;
-    opacity: 1;
-    transform: scale(3);
-    transition: all 0.3s linear 0s;
-}
-.our-team:hover .pic:before{
- height: 100%;
-    background: #2f2f2f; 
- }
-.our-team .pic:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: #ffffff00;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transition: all 0.3s linear 0s;
-}
-.our-team:hover .pic:after{
-    background: #7ab92d;
-}
-.our-team .pic img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    transform: scale(1);
-    transition: all 0.9s ease 0s;
-    box-shadow: 0 0 0 14px #f7f5ec;
-    transform: scale(0.7);
-    position: relative;
-    z-index: 2;
-}
-.our-team:hover .pic img{
-    box-shadow: 0 0 0 14px #f7f5ec;
-    transform: scale(0.7);
-}
-.our-team .team-content{ margin-bottom: 30px; }
-.our-team .title{
-    font-size: 22px;
-    font-weight: 700;
-    color: #4e5052;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    margin-bottom: 5px;
-}
-.our-team .post{
-    display: block;
-    font-size: 15px;
-    color: #4e5052;
-    text-transform:capitalize;
-}
-.our-team .social{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background: #2f2f2f;
-    position: absolute;
-    bottom: -100px;
-    left: 0;
-    transition: all 0.5s ease 0s;
-}
-.our-team:hover .social{ bottom: 0; }
-.our-team .social li{ display: inline-block; }
-.our-team .social li a{
-    display: block;
-    padding: 10px;
-    font-size: 17px;
-    color: #fff;
-    transition: all 0.3s ease 0s;
-}
-.our-team .social li a:hover{
-    color: #2f2f2f;
-    background: #f7f5ec;
-}
-@media only screen and (max-width: 990px){
-    .our-team{ margin-bottom: 30px; }
-}
-    </style>
+</style>
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -267,7 +235,7 @@ p {
           
             
             <div class="site-logo">
-              <a href="index.html" class="text-black"><span class="" style="color: green;">Seervi Tax Consultancy</a>
+              <a href="index.html" class="text-black"><span class="" style="color: green;" > <img src="/images/logo.png" width="40px"  alt=""> &nbsp; Seervi Tax Consultancy</a>
             </div>
             
               <nav class="site-navigation text-center ml-auto" role="navigation">
@@ -419,7 +387,7 @@ p {
       </div>
     </div>
 
-    <!-- <div class="site-section bg-light" id="services-section"> -->
+    <!-- <div class="site-section bg-light" id="services-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12">
@@ -429,199 +397,167 @@ p {
           </div>
         </div>
    
-        <section>
- 
-          <div class="row">
-            <div class="column">
-              <div class="card">
-                <div class="icon-wrapper">
-                  <i class=""></i>
-                </div>
-                <h3>Book Keeping</h3>
-                <!-- <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-                  consequatur necessitatibus eaque.
-                </p> -->
-              </div>
-            </div>
-            <div class="column">
-              <div class="card">
-                <div class="icon-wrapper">
-                  <i class="fas fa-brush"></i>
-                </div>
-                <h3>ITR Filing</h3>
-                <!-- <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-                  consequatur necessitatibus eaque.
-                </p> -->
-              </div>
-            </div>
-            <div class="column">
-              <div class="card">
-                <div class="icon-wrapper">
-                  <i class="fas fa-wrench"></i>
-                </div>
-                <h3>Service Heading</h3>
-                <!-- <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-                  consequatur necessitatibus eaque.
-                </p> -->
-              </div>
-            </div>
-            <div class="column">
-              <div class="card">
-                <div class="icon-wrapper">
-                  <i class="fas fa-truck-pickup"></i>
-                </div>
-                <h3>Service Heading</h3>
-                <!-- <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-                  consequatur necessitatibus eaque.
-                </p> -->
-              </div>
-            </div>
-            <div class="column">
-              <div class="card">
-                <div class="icon-wrapper">
-                  <i class="fas fa-broom"></i>
-                </div>
-                <h3>Service Heading</h3>
-                <!-- <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-                  consequatur necessitatibus eaque.
-                </p> -->
-              </div>
-            </div>
-            <div class="column">
-              <div class="card">
-                <div class="icon-wrapper">
-                  <i class="fas fa-plug"></i>
-                </div>
-                <h3>Service Heading</h3>
-                <!-- <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-                  consequatur necessitatibus eaque.
-                </p> -->
-              </div>
-            </div>
-          </div>
-        </section>
-    
-    
       </div>
-    <!-- </div> -->
+    </div> -->
 
 
-    <section class="our-team-section">
+    <section class="services section-bg" id="services">
       <div class="container">
-          <div class="row" style="display: flex; justify-content: center;">
-              <div class="col-lg-3 col-md-6 col-sm-6">
-                  <div class="our-team">
-                      <div class="pic">
-                          <img src="images/ashok.JPG">
-                      </div>
-                      <div class="team-content">
-                          <h3 class="title">CEO</h3>
-                          <span class="post">Ashok Barfa</span>
-                          
-                      </div>
-                      <ul class="social">
-                          <li>
-                              <a href="#"  target="_blank"class="fa fa-facebook"></a>
-                          </li>
-                          <li>
-                              <a href="#" class="fa fa-twitter"></a>
-                          </li>
-                          <li>
-                              <a href="#" class="fa fa-google-plus"></a>
-                          </li>
-                          <li>
-                              <a href="#" class="fa fa-linkedin"></a>
-                          </li>
-                      </ul>
-                  </div>
+        <header class="section-header">
+          <h3>Services</h3>
+    
+          <!-- <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p> -->
+          <p></p>
+        </header>
+    
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="icon" style="background: #000;">
+                <i class="fa fa-file service-icon" style="color: #c59c35;"></i>
               </div>
-
-              <!-- <div class="col-lg-3 col-md-6 col-sm-6">
-                  <div class="our-team">
-                      <div class="pic">
-                          <img src="https://i.ibb.co/8x9xK4H/team.jpg">
-                      </div>
-                      <div class="team-content">
-                          <h3 class="title">Team 2</h3>
-                          <span class="post">Stellvertretender  Geschäftsführer</span>
-                      </div>
-                      <ul class="social">
-                          <li>
-                              <a href="#" class="fa fa-facebook"></a>
-                          </li>
-                          <li>
-                              <a href="#" class="fa fa-twitter"></a>
-                          </li>
-                          <li>
-                              <a href="#" class="fa fa-google-plus"></a>
-                          </li>
-                          <li>
-                              <a href="#" class="fa fa-linkedin"></a>
-                          </li>
-                      </ul>
-                  </div> -->
-              <!-- </div>
-              <div class="col-lg-3 col-md-6 col-sm-6"> -->
-                  <!-- <div class="our-team">
-                      <div class="pic">
-                          <img src="https://i.ibb.co/8x9xK4H/team.jpg">
-                      </div>
-                      <div class="team-content">
-                          <h3 class="title">Team 3</h3>
-                          <span class="post">Dipl. Physiotherapeut </span>
-                      </div>
-                      <ul class="social">
-                          <li>
-                              <a href="#" class="fa fa-facebook"></a>
-                          </li>
-                          <li>
-                              <a href="#" class="fa fa-twitter"></a>
-                          </li>
-                          <li>
-                              <a href="#" class="fa fa-google-plus"></a>
-                          </li>
-                          <li>
-                              <a href="#" class="fa fa-linkedin"></a>
-                          </li>
-                      </ul>
-                  </div> -->
-              <!-- </div> -->
-
-              <!-- <div class="col-lg-3 col-md-6 col-sm-6">
-                  <div class="our-team">
-                      <div class="pic">
-                          <img src="https://i.ibb.co/8x9xK4H/team.jpg">
-                      </div>
-                      <div class="team-content">
-                          <h3 class="title">Team 4</h3>
-                          <span class="post">Dipl. Physiotherapeut </span>
-                      </div>
-                      <ul class="social">
-                          <li>
-                              <a href="#" class="fa fa-facebook"></a>
-                          </li>
-                          <li>
-                              <a href="#" class="fa fa-twitter"></a>
-                          </li>
-                          <li>
-                              <a href="#" class="fa fa-google-plus"></a>
-                          </li>
-                          <li>
-                              <a href="#" class="fa fa-linkedin"></a>
-                          </li>
-                      </ul>
-                  </div> -->
-              </div>
+    
+              <h4 class="title"><a href="">Tax Planning</a></h4>
+    
+              <!-- <p class="description">Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p> -->
+            </div>
           </div>
-      <!-- </div> -->
+    
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="icon" style="background: #000;">
+                <i class="fa fa-clipboard service-icon" style="color: #c59c35;"></i>
+              </div>
+    
+              <h4 class="title"><a href="">GST Filing</a></h4>
+    
+            </div>
+          </div>
+    
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="icon" style="background: #000;">
+                <i class="fa fa-chart-bar service-icon" style="color: #c59c35;"></i>
+              </div>
+    
+              <h4 class="title"><a href="">ITR Filing</a></h4>
+    
+            </div>
+          </div>
+    
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="icon" style="background: #000;">
+                <i class="fa fa-binoculars service-icon" style="color: #c59c35;"></i>
+              </div>
+    
+              <h4 class="title"><a href="">Accounting</a></h4>
+    
+            </div>
+          </div>
+    
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="icon" style="background: #000;">
+                <i class="fa fa-cog service-icon" style="color:#c59c35;"></i>
+              </div>
+    
+              <h4 class="title"><a href="">MSME Registration</a></h4>
+    
+            </div>
+          </div>
+    
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="icon" style="background: #000;">
+                <i class="fa fa-calendar-alt service-icon" style="color: #c59c35;"></i>
+              </div>
+    
+              <h4 class="title"><a href="">Certifications</a></h4>
+    
+            </div>
+          </div>
+    
+    
+        </div>
+      </div>
+    </section>
 
-  </section>
+
+
+
+
+    <section class="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 content text-center">
+            <p></p>
+            <h2>our <span> team</span></h2>
+            <!-- <p class="p">Sed ut perspiciatis unde omnis iste natus error sit<br> voluptatem accusantium doloremque
+              laudantium totam </p> -->
+          </div>
+        </div>
+        <div class="row text-center">
+          <!-- <div class="col-md-3 col-sm-12 ourteam">
+            <div class="card ">
+              <img src="https://i.imgur.com/yXPdtV0.jpg" class="card-img-top card1">
+              <div class="card-body">
+                <h5 class="card-title T1">Harvey Rube </h5>
+                <i class="fab fa-facebook fa-lg i1 f1"></i>
+                <i class="fa fa-twitter fa-lg i2 t1"></i>
+                <i class="fab fa-google-plus fa-lg i3 g1"></i>
+                <p class="card-text tx1">enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+  
+              </div>
+            </div>
+  
+          </div> -->
+          <!-- <div class="col-md-3 col-sm-12 ourteam">
+            <div class="card ">
+              <img src="https://i.imgur.com/t4XpJqQ.jpg" class="card-img-top card2">
+              <div class="card-body">
+                <h5 class="card-title T2">Catherina Gail</h5>
+                <i class="fab fa-facebook fa-lg i1 f2"></i>
+                <i class="fa fa-twitter fa-lg i2 t2"></i>
+                <i class="fab fa-google-plus fa-lg i3 g2"></i>
+                <p class="card-text tx2">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
+  
+              </div>
+            </div>
+  
+          </div> -->
+          <!-- <div class="col-md-3 col-sm-12 ourteam">
+            <div class="card ">
+              <img src="https://i.imgur.com/cjTev1q.jpg" class="card-img-top card3">
+              <div class="card-body">
+                <h5 class="card-title T3">Kevin Ward</h5>
+                <i class="fab fa-facebook fa-lg i1 f3"></i>
+                <i class="fa fa-twitter fa-lg i2 t3"></i>
+                <i class="fab fa-google-plus fa-lg i3 g3"></i>
+                <p class="card-text tx3">Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
+  
+              </div>
+            </div>
+  
+          </div> -->
+          <div class="col-md-3 col-sm-12 ourteam">
+            <div class="card ">
+              <img src="images/ashok.JPG" class="card-img-top card4">
+              <div class="card-body">
+                <h5 class="card-title T4">ASHOK BARFA</h5>
+                <i class="fa fa-instagram i2 t4"></i>              
+                  <!-- <i class="fa fa-twitter fa-lg i2 t4"></i>
+                <i class="fab fa-google-plus fa-lg i3 g4"></i> -->
+                <p class="card-text tx4"> CEO / FOUNDER </p>
+  
+              </div>
+            </div>
+  
+          </div>
+        </div>
+    </section>
+
+
 
 
 
@@ -674,7 +610,7 @@ p {
       </div>
     </div> -->
 
-    <div class="site-section block-13 overlay bg-image" id="testimonials-section" data-aos="fade" style="background-image: url('images/hero_1.jpg');">
+    <!-- <div class="site-section block-13 overlay bg-image" id="testimonials-section" data-aos="fade" style="background-image: url('images/hero_1.jpg');">
       <div class="container">
         
         <div class="text-center mb-5">
@@ -741,7 +677,7 @@ p {
         </div>
 
       </div>
-    </div>
+    </div> -->
 
     <div class="site-section" id="blog-section">
       <div class="container">
@@ -869,7 +805,7 @@ p {
         </div>
         <div class="row">
           <div class="col-lg-6 mb-5">
-            <form action="#" method="post">
+            <form action="mailto:seervitaxconsultancy@gmail.com" method="post">
               <div class="form-group row">
                 <div class="col-md-6 mb-4 mb-lg-0">
                   <input type="text" class="form-control" placeholder="First name">
@@ -890,11 +826,13 @@ p {
                   <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>
                 </div>
               </div>
+         
               <div class="form-group row">
                 <div class="col-md-6 ml-auto">
-                  <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message">
+                  <input type="submit"  class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message">
                 </div>
               </div>
+
             </form>
           </div>
           <div class="col-lg-4 ml-auto">
@@ -971,6 +909,44 @@ p {
 
   </div>
 
+
+<script>
+
+   $('.team .motion .dot').each(function (color) {
+    $(this).click(function () {
+      $(this).addClass('activecolor').siblings().removeClass('activecolor');
+      $($(this).data('val')).css({
+        filter: 'none',
+        filter: 'grayscale(0%)',
+        borderBottom: '5px solid #f7600e',
+        transform: 'scale(1.1)'
+      });
+
+      $($(this).data('face')).css('color', '#3b5998')
+      $($(this).data('t')).css('color', '#5f666d')
+      $($(this).data('twitter')).css('color', '#1da1f2')
+      $($(this).data('google')).css('color', '#dd4b39')
+      $($(this).data('text')).addClass('tx');
+
+      
+
+      console.log( $($(this).data('val')).parent())
+
+    });
+
+  });
+ 
+         
+        
+
+  
+  
+</script>
+
+
+
+
+  <script src="https://use.fontawesome.com/dc98f3acc4.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
