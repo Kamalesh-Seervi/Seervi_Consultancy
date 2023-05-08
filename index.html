@@ -154,6 +154,9 @@ text-align: center;
 }
 .team .card{
     color: #cbcdcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: none;
     cursor: pointer;
     transition: var(--mainTransition);
@@ -697,7 +700,7 @@ text-align: center;
   <!-- 
   rssfeed_url = new Array(); 
   rssfeed_url[0]="https://economictimes.indiatimes.com/wealth/tax/rssfeeds/47119912.cms";  
-  rssfeed_frame_width="500"; 
+  rssfeed_frame_width="95%"; 
   rssfeed_frame_height="500"; 
   rssfeed_scroll="on"; 
   rssfeed_scroll_step="5"; 
@@ -706,7 +709,7 @@ text-align: center;
   rssfeed_font_size="12"; 
   rssfeed_font_face=""; 
   rssfeed_border="on"; 
-  rssfeed_css_url="https://feed.surfing-waves.com/css/style6.css"; 
+  // rssfeed_css_url="https://feed.surfing-waves.com/css/style6.css"; 
   rssfeed_title="on"; 
   rssfeed_title_name=""; 
   rssfeed_title_bgcolor="green"; 
@@ -718,7 +721,7 @@ text-align: center;
   rssfeed_footer_color="#333"; 
   rssfeed_footer_bgimage=""; 
   rssfeed_item_title_length="50"; 
-  rssfeed_item_title_color="#666"; 
+  rssfeed_item_title_color="green"; 
   rssfeed_item_bgcolor="#fff"; 
   rssfeed_item_bgimage=""; 
   rssfeed_item_border_bottom="on"; 
@@ -745,7 +748,7 @@ text-align: center;
   <!-- 
   rssfeed_url = new Array(); 
   rssfeed_url[1]="https://economictimes.indiatimes.com/prime/money-and-markets/rssfeeds/62511286.cms";  
-  rssfeed_frame_width="500"; 
+  rssfeed_frame_width="95%"; 
   rssfeed_frame_height="500"; 
   rssfeed_scroll="on"; 
   rssfeed_scroll_step="5"; 
@@ -757,16 +760,16 @@ text-align: center;
   rssfeed_css_url=""; 
   rssfeed_title="on"; 
   rssfeed_title_name=""; 
-  rssfeed_title_bgcolor="#3366ff"; 
-  rssfeed_title_color="#fff"; 
+  rssfeed_title_bgcolor="green"; 
+  rssfeed_title_color="white"; 
   rssfeed_title_bgimage=""; 
   rssfeed_footer="off"; 
   rssfeed_footer_name="rss feed"; 
-  rssfeed_footer_bgcolor="#fff"; 
+  rssfeed_footer_bgcolor="green"; 
   rssfeed_footer_color="#333"; 
   rssfeed_footer_bgimage=""; 
   rssfeed_item_title_length="50"; 
-  rssfeed_item_title_color="#666"; 
+  rssfeed_item_title_color="green"; 
   rssfeed_item_bgcolor="#fff"; 
   rssfeed_item_bgimage=""; 
   rssfeed_item_border_bottom="on"; 
@@ -783,7 +786,7 @@ text-align: center;
   </script> 
   <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script> 
   <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. --> 
-  <div style="color:#ccc;font-size:10px; text-align:right; width:500px;">powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank" style="color:#ccc;">Surfing Waves</a></div> 
+
   <!-- end sw-rss-feed code -->
             </div>
           </div>
@@ -909,56 +912,5 @@ text-align: center;
 
   </div>
 
-
-<script>
-
-   $('.team .motion .dot').each(function (color) {
-    $(this).click(function () {
-      $(this).addClass('activecolor').siblings().removeClass('activecolor');
-      $($(this).data('val')).css({
-        filter: 'none',
-        filter: 'grayscale(0%)',
-        borderBottom: '5px solid #f7600e',
-        transform: 'scale(1.1)'
-      });
-
-      $($(this).data('face')).css('color', '#3b5998')
-      $($(this).data('t')).css('color', '#5f666d')
-      $($(this).data('twitter')).css('color', '#1da1f2')
-      $($(this).data('google')).css('color', '#dd4b39')
-      $($(this).data('text')).addClass('tx');
-
-      
-
-      console.log( $($(this).data('val')).parent())
-
-    });
-
-  });
- 
-         
-        
-
-  
-  
-</script>
-
-
-
-
-  <script src="https://use.fontawesome.com/dc98f3acc4.js"></script>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/aos.js"></script>
-
-  <script src="js/main.js"></script>
-    
   </body>
 </html>
