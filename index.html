@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="1; http://seervitax.com/landing2.html" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet"> -->
+    <title>Seervi Tax Consultancy</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color:green;
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+button > svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+button > svg > rect {
+  fill: none;
+  stroke: #333333;
+  stroke-width: 2px;
+  stroke-dasharray: 240 160 240 160;
+  stroke-dashoffset: 0;
+  animation: pathRect 2s linear infinite;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+}
+
+@keyframes pathRect {
+  25% {
+    stroke-dashoffset: 100;
+  }
+
+  50% {
+    stroke-dashoffset: 200;
+  }
+
+  75% {
+    stroke-dashoffset: 300;
+  }
+
+  100% {
+    stroke-dashoffset: 400;
+  }
+}
+
+</style>
+<body>
+    <div class='wrapper'>
+        <button><img src="images/logo.png" alt="" width="36px">&nbsp;&nbsp;&nbsp;Seervi Tax Consultancy ...
+          <svg>
+            <rect x="1" y="1"></rect>
+          </svg>
+        </button>
+      </div>
+</body>
+</html>

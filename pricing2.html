@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="https://kit.fontawesome.com/1df51fbee8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 14px;
+
+}
+.pricing{
+    display:flex;
+    justify-content:center;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+    margin: 50px;
+    padding: 0px 20px;
+
+}
+.pricing-table{
+   box-shadow: 0px 0px 18px #ccc;
+   text-align: center;
+   padding: 30px 0px;
+   border-radius: 5px;
+   position: relative;
+ 
+}
+.pricing-table .head {
+    border-bottom:1px solid #eee;
+    padding-bottom: 50px;
+    transition: all 0.5s ease;
+}
+.pricing-table:hover .head{
+   border-bottom:1px solid #8E2DE2;
+   
+}
+
+.pricing-table .head .title{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pricing-table .content .price{
+    background:green;
+    width: 120px;
+    height: 100px;
+    padding:25px 0 0 0;
+    margin: auto;
+    line-height: 90px;
+    border-radius: 20%;
+    border: 4px solid #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    margin-top: -50px;
+     transition: all 0.5s ease;
+}
+.pricing-table:hover .content .price{
+    transform: scale(1.2);
+ 
+}
+.pricing-table .content .price h1{
+    color:#fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+.pricing-table .content ul{
+   list-style-type: none;
+   margin-bottom: 20px;
+   padding-top: 10px;
+}
+
+.pricing-table .content ul li{
+    margin: 20px 0px;
+    font-size: 14px;
+    color:#555;
+}
+
+.pricing-table .content .sign-up{
+    background:green;
+    border-radius: 40px;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+}
+
+
+.pricing-table .btn {
+	color: #fff;
+	padding: 14px 40px;
+	display: inline-block;
+	text-align: center;
+	font-weight: 600;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3 linear;
+	transition: all 0.3 linear;
+	border: none;
+	font-size: 14px;
+	text-transform: capitalize;
+	position: relative;
+	text-decoration: none;
+    margin: 2px;
+    z-index: 9999;
+    text-decoration: none;
+    border-radius:50px;
+ 
+}
+
+.pricing-table .btn:hover{
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-table .btn.bordered {
+	z-index: 50;
+	color: #333;
+}
+.pricing-table:hover .btn.bordered{
+	color:#fff !important;
+}
+
+.pricing-table .btn.bordered:after {
+	background: #fff none repeat scroll 0 0;
+	border-radius: 50px;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3 linear;
+	transition: all 0.3 linear;
+	width: 100%;
+	z-index: -1;	
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	transform:scale(1);
+}
+.pricing-table:hover .btn.bordered:after{
+	opacity:0;
+	transform:scale(0);
+}
+
+@media screen and (max-width:768px){
+   .wrapper{
+        grid-template-columns: repeat(2,1fr);
+    } 
+}
+
+@media screen and (max-width:600px){
+   .wrapper{
+        grid-template-columns: 1fr;
+    } 
+}
+</style>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div class="site-wrap"  id="home-section">
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+     
+        
+      <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+  
+        <div class="container">
+          <div class="row align-items-center position-relative">
+            
+              
+              <div class="site-logo">
+                <a href="index.html" class="text-black"><span class="" style="color: green;" > <img src="/images/logo.png" width="40px"  alt=""> &nbsp; Seervi Tax Consultancy</a>
+              </div>
+              
+                <nav class="site-navigation text-center ml-auto" role="navigation">
+  
+                  <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                    <li><a href="http://seervitax.com/landing2.html#home-section" class="nav-link" >Home</a></li>
+                    <li><a href="http://seervitax.com/landing2.html#about-section" class="nav-link">About</a></li>
+                    <li><a href="http://143.198.196.24/landing2.html#services" class="nav-link">Services</a></li>
+                    <li><a href="pricing2.html" class="nav-link">Pricing</a></li>
+                    <li><a href="http://143.198.196.244/landing2.html#blog-section" class="nav-link">News</a></li>
+                    <li><a href="http://143.198.196.244/landing2.html#contact-section" class="nav-link">Contact</a></li>
+                  </ul>
+                </nav>
+            <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+ <div class=" text-center">
+    <h1>
+        Income TAX
+    </h1>
+ </div>   
+    <div class="wrapper">
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">Income Tax</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 699</h1>
+                </div>
+                <ul>
+                    <li>Salary upto 50L</li>
+                    <li>Income from Other Sources</li>
+                    <li>Income From 1 House Property</li>
+                </ul>
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">Income Tax</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 999</h1>
+                </div>
+                <ul>
+                    <li>Salary More Than 50 Lakh</li>
+                    <li>Income From Other Sources</li>
+                    <li>Income More Than 1 House Property</li>
+                </ul>
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">Income Tax</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 1999</h1>
+                </div>
+                <ul>
+                    <li>Income From Business/ Profession</li>
+                    <li>Capital Gain</li>
+                    <li>Income From Salary</li>
+
+                </ul>
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+</div>
+<div class="text-center">
+    <h1>
+        TDS / DSC
+    </h1>
+</div>
+<div class="wrapper">
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">TDS</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 350</h1>
+                </div>
+                <ul>
+                    <li>TAN /PAN APPLY</li>
+
+                </ul>
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">TDS</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 1750</h1>
+                </div>
+                <ul>
+                    <li>DSC</li>
+
+
+                </ul>
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">TDS</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 2000</h1>
+                </div>
+                <ul>
+                    <li>TDS Return
+                        (UPTO 20 ENTRIES)</li>
+
+
+                </ul>
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">TDS</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 3000</h1>
+                </div>
+                <ul>
+                    <li>TDS Return
+                        (MORE THAN 20 ENTRIES)</li>
+
+                </ul>
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>     
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">MSME</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 800</h1>
+                </div>
+                <ul>
+                    <li>MSME REGISTRATION</li>
+                </ul>
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="text-center">
+        <h1>
+            GST
+        </h1>
+    </div>
+
+    <div class="wrapper">
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">Composition</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 1000</h1>
+                </div>
+                <ul>
+                    <li>Registration</li>
+                </ul>
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">Composition</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 1500 <span style="font-size:18px;">/Quarter</span></h1>
+                </div>
+                <ul>
+                    <li>Return (Quarter)</li>
+                </ul>
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">Composition</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 5000 <span style="font-size:18px;">/Year</span></h1>
+                </div>
+                <ul>
+                    <li>Return</li>
+                </ul>
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">GST Regular</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 1500</h1>
+                </div>
+                <ul>
+                    <li>Registration</li>
+                </ul>
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">GST Return</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 800 <span style="font-size:18px;">/month</span></h1>
+                </div>
+                <ul>
+                    <li>OTHER THAN GSTR 9 & 9C (/month)</li>
+                </ul>
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">GSTR9</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 3500</h1>
+                </div>
+                <!-- <ul>
+                    <li>Return (Year)</li>
+                </ul> -->
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">GSTR 9C</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 5000</h1>
+                </div>
+                <!-- <ul>
+                    <li>Return (Year)</li>
+                </ul> -->
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="pricing-table gprice-single">
+            <div class="head">
+                 <h4 class="title">GSTR 9 & 9C</h4> 
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h1>&#8377 7000</h1>
+                </div>
+                <!-- <ul>
+                    <li>Return (Year)</li>
+                </ul> -->
+                <!-- <div class="sign-up">
+                    <a href="#" class="btn bordered radius">Signup Now</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-9">
+                  <h2 class="footer-heading mb-4">About Us</h2>
+  <p>Our goal is to provide Accounting, Payroll and Tax compliance services to Businesses at affordable price with Quality of Service. Outsourcing the right business processes makes a lot of business sense. Most businesses and large companies are outsourcing their accounting, financial reporting and payroll processes for driving efficiency and cost savings to the business.</p>
+                </div>
+                <div class="col-md-3 ml-auto">
+                  <h2 class="footer-heading mb-4">Features</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <!-- <li><a href="#">Testimonials</a></li> -->
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-md-4 ml-auto">
+  
+              <div class="mb-5">
+                <!-- <div class="mb-5">
+                  <h2 class="footer-heading mb-4">Some Paragraph</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nostrum libero iusto dolorum vero atque aliquid.</p>
+                </div> -->
+                <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
+                <form action="mailto:kkamalesh117@gmail.com" method="post">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control border-secondary text-grey bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+  
+  
+                <h2 class="footer-heading mb-4">Follow Us</h2>
+                  <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
+                  <!-- <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a> -->
+                  <a href="https://instagram.com/seervitaxconsultancy?igshid=NTc4MTIwNjQ2YQ==" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                  <!-- <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a> -->
+              </form>
+            </div>
+          </div>
+          <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+              <div class="border-top pt-5">
+              <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy; Seervi Tax Consultancy <script>document.write(new Date().getFullYear());</script> All rights reserved </a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </footer>
+
+
+
+      <script src="https://use.fontawesome.com/dc98f3acc4.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
