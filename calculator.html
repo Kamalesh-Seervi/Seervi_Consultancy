@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Seervi Tax Consultancy</title>
+</head>
+<style>
+        .content {
+            text-align: center;
+        }
+
+        h3 {
+            margin-bottom: 25px;
+        }
+
+        p {
+            width: 100%;
+            max-width: 200px; /* Adjust the maximum width as needed */
+            margin: auto; 
+        }
+
+        .btn-primary {
+            background-color: rgb(0, 128, 0);
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            p {
+                max-width: none; /* Remove max-width for smaller screens */
+            }
+        }
+</style>
+<body>
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+            
+              
+              <div class="site-logo">
+                <a href="index.html" class="text-black"><span class="" style="color: green;" > <img src="/images/logo.png" width="40px"  alt=""> &nbsp; Seervi Tax Consultancy</a>
+              </div>
+              
+                <nav class="site-navigation text-center ml-auto" role="navigation">
+  
+                  <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                    <li><a href="http://seervitax.com/landing2.html#home-section" class="nav-link" >Home</a></li>
+                    <li><a href="http://seervitax.com/landing2.html#about-section" class="nav-link">About</a></li>
+                    <li><a href="http://seervitax.com/landing2.html#services" class="nav-link">Services</a></li>
+                    <li><a href="pricing2.html" class="nav-link">Pricing</a></li>
+                    <li><a href="calculator.html" class="nav-link">Calculator</a></li>
+                    <li><a href="http://seervitax.com/landing2.html#blog-section" class="nav-link">News</a></li>
+                    <li><a href="http://seervitax.com/landing2.html#contact-section" class="nav-link">Contact</a></li>
+                  </ul>
+                </nav>
+            
+              
+  
+            <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+  
+          </div>
+        </div>
+        
+      </header>
+
+
+    <div class="container py-5" onkeyup="gst_calculator()">
+  <h3 class="text-center mb-5">GST Price Calculator </h3>
+  <div class="form-group">
+    <label for="">GST Type</label>
+    <select class="form-control" id="gst_type" onchange="gst_calculator()">
+      <option value="inclusive">GST Inclusive</option>
+      <option value="exclusive">GST Exclusive</option>
+    </select>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="">Product Price</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">&#8377;</span>
+          </div>
+          <input type="number" class="form-control" id="product_price">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-group">
+        <label for="">GST Tax</label>
+        <select class="form-control" id="gst_tax" onchange="gst_calculator()">
+            <option value="3">3%</option>
+            <option value="5">5%</option>
+            <option value="12">12%</option>
+            <option value="18">18%</option>
+            <option value="28">28%</option>
+          </select>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="">Discount Percentage</label>
+        <div class="input-group">
+          <input type="number" class="form-control" id="discount_percentage">
+          <div class="input-group-append">
+            <span class="input-group-text">%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-group">
+        <label for="">Discount Price</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">&#8377;</span>
+          </div>
+          <input type="number" class="form-control" id="discount_price" disabled>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="">Final Price</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">&#8377;</span>
+          </div>
+          <input type="number" class="form-control" id="final_price" disabled>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="content">
+        <h3>Income Tax Calculator</h3>
+        <p><a href="https://incometaxindia.gov.in/pages/tools/tax-calculator.aspx" class="btn btn-primary text-white py-3 px-5">Income Tax Calculator</a></p>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    function gst_calculator() {
+      let product_price = document.getElementById("product_price").value;
+      let gst_tax = document.getElementById("gst_tax").value;
+      let discount_percentage = document.getElementById("discount_percentage").value;
+      let discount_price = document.getElementById("discount_price");
+      let final_price = document.getElementById("final_price");
+      let gst_type = document.getElementById("gst_type").value;
+    
+      if (gst_type === "inclusive") {
+        // GST Inclusive logic
+        let gst_price = ((parseInt(product_price) / (100+parseInt(gst_tax)))*100);
+        let discount_on_final = (gst_price * discount_percentage) / 100;
+        discount_price.value = discount_on_final;
+        final_price.value = (gst_price - discount_on_final).toFixed(2);
+      } else {
+        // GST Exclusive logic
+        let gst_price = (parseInt(product_price) * gst_tax) / 100;
+        let discount_on_final = (parseInt(product_price) * discount_percentage) / 100;
+        discount_price.value = discount_on_final;
+        final_price.value = parseInt(product_price) + gst_price - discount_on_final;
+      }
+    }
+    </script>
